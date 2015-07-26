@@ -1,0 +1,33 @@
+doctype html
+html(lang="en", ng-app="StarterApp")
+ head
+  title= brian
+  link(rel='stylesheet', href='//ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css')
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic')
+  link(rel='stylesheet', href='assets/css/app.css')
+  meta(name="viewport", content="initial-scale=1")
+ body(layout="column", ng-controller="AppCtrl")
+  #container.container
+   h1 testing
+   #wrapper.col-12.full-size
+    p Do it!
+   nav#left-nav
+    ul
+     li
+      a.parent(href='http://google.com') Google
+     li
+      a.parent(href="http://briandodson.com") Brian
+       ul
+        li
+         a.child(href="http://bri-design.com") bri-design.com
+        li
+         a.child(href="http://yahoo.com") yahoo.com
+    aside.callout
+     p this is a callout
+       
+   footer.footer
+    .copyright
+     p &copy; 2015 Brian Dodson
+  script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js")
+  script(src="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js")
+  script(src="assets/js/all.min.js")
